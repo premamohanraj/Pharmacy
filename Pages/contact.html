@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Contact us
+        </title>
+        <link rel="stylesheet" href="../style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <style>
+             body{
+                background-image: url('../img/bg-2.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="contact">
+        <h2>To contact us</h2>
+        <br>
+        <fieldset>
+            <label for="name">Your Name</label><br>
+              <input type="text" class="name" pattern="[A-Za-z]{2,32}" required ><br><br>
+              <label for="email">Your Email</label>  <br>
+              <input type="text" class=email required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" ><br><br>
+              <label>Your Message</label><br>
+              <textarea rows="6" cols="36" name="comment" form="usrform"></textarea><br><br>
+              <button onclick="myalart()" class="button" >Submit</button>
+        </fieldset>
+        </div>
+        <script>
+            function myalart() {
+              alert("We got your message!!! we will contact you shortly!");
+            }
+         </script>
+    </body>
+</html>

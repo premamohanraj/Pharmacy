@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            online pharmacy.com
+        </title>
+        <link rel="stylesheet" href="../style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <style>
+            body{
+                background-image: url('../img/bg-form.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div class="form">
+            <fieldset >
+            <legend>Online pharmacy</legend>
+        <form action="index.html">
+         
+            <label><b>Name</b></label><br>
+            <input type="text" name="name" placeholder="John" pattern="[A-Za-z]{2,32}" 
+            required ><br>
+            <label><b> Contact number</b></label><br>
+            <input type="tel" name="Contact number" placeholder="9041265418" pattern="[7-9][0-9]{9}" required><br>
+            <label><b>Age</b></label><br>
+            <input type="age" name="age" max="100" min="18" placeholder="31"><br>
+            <label><b>Gender</b></label><br>
+           
+            <input type="radio" id="Male" name="gender" class="gen" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="Female" name="gender" class="gen"  value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="others" name="gender" class="gen" value="others">
+            <label for="others">Others</label> <BR>
+                <label for="start"><b>Date:</b></label>
+
+                <input type="date" id="start" name="trip-start"
+       min="2021-01-01" max="2022-12-31"><br>
+            <label><b>Blood group :</b></label><br>
+
+            <select name="Blood" id="bgroup" class="gen">
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</B-></option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                
+
+              </select>
+              <br>
+              <br>
+              <label><b>Address</b></label><br>
+              <input class="gen" type="address" name="address" placeholder="27,Anna nagar,trichy,621 215" required><br><br>
+              <label><b>Uplode your prescription</b></label><br>
+              <input class="gen" type="file" name="File" required>
+              <br><br>
+              <input type="submit"   class="button"  onclick=myalart() Submit>
+              <br>
+             
+        </form>
+            </fieldset>
+        </div>
+
+        <script>
+            function myalart() {
+              alert("your detaits has submitted! your order will be delivered within two days");
+            }
+         </script>
+    
+    </body>
+</html>

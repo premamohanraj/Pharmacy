@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            sign up
+        </title>
+        <link rel="stylesheet" href="../style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <style>
+            *{
+                font-family: 'Josefin Sans', sans-serif;
+            }
+            body{
+                background-image: url('../img/bg-1.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="signlog">
+            
+            <div class="slog">
+                <form action="index.html">
+              <h2>Sign up</h2><br>
+              <label for="name">Username</label><br>
+              <input type="name" class="name" placeholder="Username" pattern="[a-zA-z0-9.$_]{5,15}"  title="Username should contain 5-15 characters"  required><br><br>
+              <label for="email">Email</label>  <br>
+              <input type="email" class=email placeholder="abc13@gmail.com"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br><br>
+              <label for="psw"><b>Password</b></label><br>
+              <input type="password" placeholder="Enter Password" name="psw"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="8" maxlength="20"
+              title="Must contain at least one  number and one uppercase and lowercase letter, and
+              at least 8 or more characters"  required><br><br>
+              
+            <input type="submit" value="sign up">
+                </form>
+            </div>
+        </div>
+      
+        
+        
+    
+    </body>
+</html>
